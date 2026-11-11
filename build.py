@@ -51,6 +51,21 @@ def qr_svg(url):
     return img.to_string(encoding="unicode")
 
 
+def tag_qr(url, base):
+    """Write <base>.png (1480 px, for printing) and <base>.svg, both with a 4-module white margin."""
+    os.makedirs(os.path.dirname(base), exist_ok=True)
+    for factory, ext in [(None, ".png"), (qrcode.image.svg.SvgPathFillImage, ".svg")]:
+        q = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M, box_size=40, border=4,
+                          image_factory=factory)
+        q.add_data(url)
+        q.make(fit=True)
+        img = q.make_image() if factory else q.make_image(fill_color="black", back_color="white")
+        img.save(base + ext)
+    stale = base + "-tag.svg"
+    if os.path.exists(stale):
+        os.remove(stale)
+
+
 FONT_CSS = """
 @font-face{font-family:"EB Garamond";src:url("{a}fonts/EBGaramond-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"EB Garamond";src:url("{a}fonts/EBGaramond-Medium.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
@@ -369,8 +384,8 @@ def build(preview=False):
         # print layout, used by make_pdf.py
         write(os.path.join(ROOT, "build", "print", rid, "print.html"),
               print_page(r, "../../../assets/", f"../../../photos/{rid}/"))
-        # QR code for the hang tag
-        write(os.path.join(ROOT, "qr", f"{rid}.svg"), qr_svg(f"{SITE}/{rid}"))
+        # QR code for the hang tag, with the white quiet zone scanners need
+        tag_qr(f"{SITE}/{rid}", os.path.join(ROOT, "qr", rid))
         if preview:
             # one flat folder for previewing before the domain is live: <id>.html side by side
             write(os.path.join(ROOT, "preview", f"{rid}.html"),
