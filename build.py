@@ -1,6 +1,6 @@
 """Build the PusherLux authenticity record site.
 
-    python3 build.py            -> writes the website to dist/
+    python3 build.py            -> writes the website to docs/ (served by GitHub Pages)
     python3 build.py --preview  -> also writes preview/<id>/ (flat, self-contained)
 
 Each bag is one file in records/<id>.json plus its photos in photos/<id>/.
@@ -17,7 +17,7 @@ import qrcode
 import qrcode.image.svg
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-SITE = "https://pusherlux.com"
+SITE = "https://pusherlux.github.io"
 SHOP = "PusherLux"
 EMAIL = "pusherlux@gmail.com"
 ROMAN = ["i.", "ii.", "iii.", "iv.", "v.", "vi.", "vii.", "viii.", "ix.", "x."]
@@ -350,12 +350,13 @@ def copy_tree(src, dst):
 
 def build(preview=False):
     recs = load_records()
-    dist = os.path.join(ROOT, "dist")
+    dist = os.path.join(ROOT, "docs")
     if os.path.isdir(dist):
         shutil.rmtree(dist)
     copy_tree(os.path.join(ROOT, "assets"), os.path.join(dist, "assets"))
     write(os.path.join(dist, "index.html"), landing_page("/assets/"))
     write(os.path.join(dist, "404.html"), not_found_page("/assets/"))
+    write(os.path.join(dist, ".nojekyll"), "")
     for r in recs:
         rid = r["id"]
         out = os.path.join(dist, rid)
@@ -374,7 +375,7 @@ def build(preview=False):
             # one flat folder for previewing before the domain is live: <id>.html side by side
             write(os.path.join(ROOT, "preview", f"{rid}.html"),
                   record_page(r, "assets/", f"photos/{rid}/", f"pdf/{pdf_name}"))
-    print(f"Built {len(recs)} records into dist/")
+    print(f"Built {len(recs)} records into docs/")
 
 
 if __name__ == "__main__":
