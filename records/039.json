@@ -1,0 +1,66 @@
+{
+  "id": "039",
+  "brand": "Gucci",
+  "title": "Gucci Princy Boston",
+  "subtitle": "Guccissima leather, made in Italy, late 2000s",
+  "inspected": "2026-11-08",
+  "issued": "2026-11-10",
+  "verdict": "Assessed as consistent with authentic",
+  "hero": "01-front.jpg",
+  "details": [
+    ["Brand", "Gucci"],
+    ["Model", "Princy Boston bag"],
+    ["Material", "Guccissima (embossed GG) leather, light taupe with a soft sheen"],
+    ["Lining", "Horsebit-print cotton twill"],
+    ["Hardware", "Gold-tone"],
+    ["Style and control no.", "161720 · 002058"],
+    ["Made", "Italy, late 2000s (Princy line)"],
+    ["Condition", "Fair to good, with visible wear"],
+    ["Included", "Bag only"]
+  ],
+  "examined": [
+    {
+      "title": "Serial tag",
+      "text": "The leather tag inside reads “161720 / 002058”: style number 161720 (Princy Boston) above supplier and control code 002058, in the two-row format Gucci used at the time. Gucci numbers identify the model and supplier, not the individual bag, and carry no production date."
+    },
+    {
+      "title": "Embossing and labels",
+      "text": "The Guccissima GG pattern is evenly spaced and aligned across the panels. The interior leather patch reads “GUCCI made in Italy” in clean, even lettering."
+    },
+    {
+      "title": "Stitching",
+      "text": "Even topstitching on the handles, zip-pull tabs and base panels, with a consistent stitch length."
+    },
+    {
+      "title": "Hardware",
+      "text": "Square zip pulls engraved with the Gucci script logo, and the Princy bow with pyramid-tipped ends and grommets. The gold-tone finish is consistent throughout."
+    },
+    {
+      "title": "Lining",
+      "text": "Cream cotton twill with a burgundy and green horsebit print and a zip pocket, as used on the Princy line."
+    },
+    {
+      "title": "Construction",
+      "text": "Shape, base corner panels and handle attachments are consistent with the model."
+    }
+  ],
+  "condition": [
+    "Uneven toning and greyish marks on the front panel.",
+    "Darkening on the handles and along the edges.",
+    "Worn edge paint on the piping.",
+    "A small green mark on one zip-pull tab.",
+    "Light surface scratches on the hardware.",
+    "The lining is clean. No tears or open seams observed."
+  ],
+  "photos": [
+    ["01-front.jpg", "Front"],
+    ["02-back.jpg", "Back"],
+    ["03-serial-tag.jpg", "Serial tag 161720 · 002058"],
+    ["04-zip-pulls.jpg", "Engraved zip pulls"],
+    ["05-bow.jpg", "Princy bow"],
+    ["06-lining-label.jpg", "Lining and interior label"],
+    ["07-top.jpg", "Top and zip"],
+    ["08-front-panel.jpg", "Toning on the front panel"]
+  ],
+  "pdf_photos": ["03-serial-tag.jpg", "04-zip-pulls.jpg", "05-bow.jpg", "06-lining-label.jpg", "08-front-panel.jpg", "02-back.jpg"]
+}

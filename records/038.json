@@ -1,0 +1,65 @@
+{
+  "id": "038",
+  "brand": "Louis Vuitton",
+  "title": "Louis Vuitton Noé",
+  "subtitle": "Toledo Blue Epi leather, made in France, January 1989",
+  "inspected": "2026-11-08",
+  "issued": "2026-11-10",
+  "verdict": "Assessed as consistent with authentic",
+  "hero": "01-front.jpg",
+  "details": [
+    ["Brand", "Louis Vuitton"],
+    ["Model", "Noé, drawstring bucket bag"],
+    ["Material", "Epi leather in Toledo Blue, smooth leather trim"],
+    ["Hardware", "Brass"],
+    ["Date code", "8901 A2"],
+    ["Made", "January 1989, France"],
+    ["Condition", "Good, with visible vintage wear"],
+    ["Included", "Bag only"]
+  ],
+  "examined": [
+    {
+      "title": "Date code",
+      "text": "“8901 A2” is heat-embossed on the side strap tab. This is the late-1980s format: year 89, month 01, followed by the French factory code A2. The date fits the Epi line, introduced in 1985, and the Toledo Blue colour, produced 1985–2002."
+    },
+    {
+      "title": "Embossing and stamps",
+      "text": "The Epi grain is even and continuous across the panels. The embossed LV logo on the side is crisp and correctly proportioned, and the grommets are engraved “LOUIS VUITTON”."
+    },
+    {
+      "title": "Stitching",
+      "text": "Straight, evenly spaced stitching in dark thread along the trim, base and strap, with a consistent stitch length and no loose or doubled stitches."
+    },
+    {
+      "title": "Hardware",
+      "text": "Solid brass D-rings, buckle and grommets with patina consistent with age. The interior zip pocket has an LV-stamped pull."
+    },
+    {
+      "title": "Interior",
+      "text": "Alcantara-type microfibre lining with an Epi-trimmed zip pocket, as on Noé bags of this period."
+    },
+    {
+      "title": "Construction",
+      "text": "Shape, proportions, base piping and drawstring routing are consistent with the model."
+    }
+  ],
+  "condition": [
+    "Colour loss and light whitening along the top edge and on the drawstring.",
+    "Scuffs and colour loss on the base corners and the lower piping.",
+    "Darkening and wear on the shoulder strap.",
+    "Tarnish and patina on the brass hardware.",
+    "Light marks on the interior base.",
+    "No tears or open seams observed."
+  ],
+  "photos": [
+    ["01-front.jpg", "Front"],
+    ["02-front-angle.jpg", "Front, second view"],
+    ["03-side.jpg", "Side"],
+    ["04-date-code.jpg", "Date code 8901 A2 on the strap tab"],
+    ["05-epi-logo.jpg", "Embossed LV logo"],
+    ["06-grommet.jpg", "Engraved grommet"],
+    ["07-interior.jpg", "Interior and zip pocket"],
+    ["08-base-corner.jpg", "Wear on base corner"]
+  ],
+  "pdf_photos": ["04-date-code.jpg", "05-epi-logo.jpg", "06-grommet.jpg", "07-interior.jpg", "08-base-corner.jpg", "03-side.jpg"]
+}
