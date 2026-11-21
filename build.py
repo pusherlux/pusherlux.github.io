@@ -386,6 +386,8 @@ def build(preview=False):
               print_page(r, "../../../assets/", f"../../../photos/{rid}/"))
         # QR code for the hang tag, with the white quiet zone scanners need
         tag_qr(f"{SITE}/{rid}", os.path.join(ROOT, "qr", rid))
+        # also served at <site>/<id>/qr.png, so the inventory sheet can show it with =IMAGE()
+        shutil.copy(os.path.join(ROOT, "qr", f"{rid}.png"), os.path.join(out, "qr.png"))
         if preview:
             # one flat folder for previewing before the domain is live: <id>.html side by side
             write(os.path.join(ROOT, "preview", f"{rid}.html"),
