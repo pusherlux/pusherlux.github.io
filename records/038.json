@@ -8,14 +8,38 @@
   "verdict": "Assessed as consistent with authentic",
   "hero": "01-front.jpg",
   "details": [
-    ["Brand", "Louis Vuitton"],
-    ["Model", "Noé, drawstring bucket bag"],
-    ["Material", "Epi leather in Toledo Blue, smooth leather trim"],
-    ["Hardware", "Brass"],
-    ["Date code", "8901 A2"],
-    ["Made", "January 1989, France"],
-    ["Condition", "Good, with visible vintage wear"],
-    ["Included", "Bag only"]
+    [
+      "Brand",
+      "Louis Vuitton"
+    ],
+    [
+      "Model",
+      "Noé, drawstring bucket bag"
+    ],
+    [
+      "Material",
+      "Epi leather in Toledo Blue, smooth leather trim"
+    ],
+    [
+      "Hardware",
+      "Brass"
+    ],
+    [
+      "Date code",
+      "8901 A2"
+    ],
+    [
+      "Made",
+      "January 1989, France"
+    ],
+    [
+      "Condition",
+      "Good, with visible vintage wear"
+    ],
+    [
+      "Included",
+      "Bag only"
+    ]
   ],
   "examined": [
     {
@@ -52,14 +76,49 @@
     "No tears or open seams observed."
   ],
   "photos": [
-    ["01-front.jpg", "Front"],
-    ["02-front-angle.jpg", "Front, second view"],
-    ["03-side.jpg", "Side"],
-    ["04-date-code.jpg", "Date code 8901 A2 on the strap tab"],
-    ["05-epi-logo.jpg", "Embossed LV logo"],
-    ["06-grommet.jpg", "Engraved grommet"],
-    ["07-interior.jpg", "Interior and zip pocket"],
-    ["08-base-corner.jpg", "Wear on base corner"]
+    [
+      "01-front.jpg",
+      "Front"
+    ],
+    [
+      "02-front-angle.jpg",
+      "Front, drawstring closed"
+    ],
+    [
+      "03-side.jpg",
+      "Side"
+    ],
+    [
+      "04-date-code.jpg",
+      "Date code 8901 A2 on the strap tab"
+    ],
+    [
+      "05-epi-logo.jpg",
+      "Embossed LV logo"
+    ],
+    [
+      "06-grommet.jpg",
+      "Engraved grommet"
+    ],
+    [
+      "07-interior.jpg",
+      "Interior and zip pocket"
+    ],
+    [
+      "08-base-corner.jpg",
+      "Wear on base corner"
+    ],
+    [
+      "09-interior-pocket.jpg",
+      "Interior zip pocket"
+    ]
   ],
-  "pdf_photos": ["04-date-code.jpg", "05-epi-logo.jpg", "06-grommet.jpg", "07-interior.jpg", "08-base-corner.jpg", "03-side.jpg"]
+  "pdf_photos": [
+    "04-date-code.jpg",
+    "05-epi-logo.jpg",
+    "06-grommet.jpg",
+    "07-interior.jpg",
+    "08-base-corner.jpg",
+    "03-side.jpg"
+  ]
 }
