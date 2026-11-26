@@ -376,6 +376,9 @@ def build(preview=False):
         rid = r["id"]
         out = os.path.join(dist, rid)
         copy_tree(os.path.join(ROOT, "photos", rid), os.path.join(out, "photos"))
+        # sales-listing photos (real background), used to fill in Vestiaire/Vinted forms
+        if os.path.isdir(os.path.join(ROOT, "listing", rid)):
+            copy_tree(os.path.join(ROOT, "listing", rid), os.path.join(out, "listing"))
         pdf_name = f"PusherLux-{rid}.pdf"
         pdf_src = os.path.join(ROOT, "pdf", pdf_name)
         if os.path.exists(pdf_src):
